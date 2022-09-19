@@ -1,0 +1,231 @@
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏆TATA IPL🏆</title>
+  </head>
+  <body>
+    <header>
+      <div id="head-container">
+        <div id="head-right">
+          <img
+            src="https://etimg.etb2bimg.com/photo/90937508.cms"
+            alt="logo"
+            id="logo"
+          />
+          <a href="index.html">
+            <button id="home-button" class="add-button">Home</button></a
+          >
+        </div>
+        <div id="head-left">
+          <div class="search-input">
+            <a href="" target="_blank" hidden=""></a>
+            <input type="text" placeholder="Search team by code           " />
+            <div class="autocom-box"></div>
+            <div class="icon">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </div>
+          </div>
+          <button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Add Team
+          </button>
+          <button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+            Add Player
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- image slider start sk -->
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide">
+          <img src="images./image1.jpg" alt="" />
+        </div>
+        <div class="slide first">
+          <img src="images./image 2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images./image 3.jpeg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images./image 4.jpg" alt="" />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <h1 id="slogan">IPL Teams</h1>
+    <div id="first-main">
+      <div id="container_teams">
+        <div onclick="makethisinclick('0')" class="minibox">
+          <img
+            src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/MI/Logos/Roundbig/MIroundbig.png"
+            class="mainimage"
+            alt=""
+          />
+          <div class="dataodcard">
+            <p class="text1">Mumbai Indians</p>
+            <p class="text2">Won Count : 5</p>
+          </div>
+        </div>
+
+        <div onclick="makethisinclick('1')" class="minibox">
+          <img
+            src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/CSK/logos/Roundbig/CSKroundbig.png"
+            class="mainimage"
+            alt=""
+          />
+          <div class="dataodcard">
+            <p class="text1">Chennai Super Kings</p>
+            <p class="text2">Won Count : 4</p>
+          </div>
+        </div>
+
+        <div onclick="makethisinclick('2')" class="minibox">
+          <img
+            src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RCB/Logos/Roundbig/RCBroundbig.png"
+            class="mainimage"
+            alt=""
+          />
+          <div class="dataodcard">
+            <p class="text1">Royal Challengers Bangalore</p>
+            <p class="text2">Won Count : 0</p>
+          </div>
+        </div>
+
+        <div onclick="makethisinclick('3')" class="minibox">
+          <img
+            src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/KKR/Logos/Roundbig/KKRroundbig.png"
+            class="mainimage"
+            alt=""
+          />
+          <div class="dataodcard">
+            <p class="text1">Kolkata Knight Riders</p>
+            <p class="text2">Won Count : 2</p>
+          </div>
+        </div>
+
+        <div onclick="makethisinclick('4')" class="minibox">
+          <img
+            src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/DC/Logos/Roundbig/DCroundbig.png"
+            class="mainimage"
+            alt=""
+          />
+          <div class="dataodcard">
+            <p class="text1">Delhi Capitals</p>
+            <p class="text2">Won Count : 0</p>
+          </div>
+        </div>
+
+        <div onclick="makethisinclick('5')" class="minibox">
+          <img
+            src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/GT/Logos/Roundbig/GTroundbig.png"
+            class="mainimage"
+            alt=""
+          />
+          <div class="dataodcard">
+            <p class="text1">Gujarat Titan</p>
+            <p class="text2">Won Count : 1</p>
+          </div>
+        </div>
+
+        <div onclick="makethisinclick('6')" class="minibox">
+          <img
+            src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RR/Logos/Roundbig/RRroundbig.png"
+            class="mainimage"
+            alt=""
+          />
+          <div class="dataodcard">
+            <p class="text1">Rajasthan Royals</p>
+            <p class="text2">Won Count : 1</p>
+          </div>
+        </div>
+
+        <div onclick="makethisinclick('7')" class="minibox">
+          <img
+            src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/SRH/Logos/Roundbig/SRHroundbig.png"
+            class="mainimage"
+            alt=""
+          />
+          <div class="dataodcard">
+            <p class="text1">Sunrises Hyderabad</p>
+            <p class="text2">Won Count : 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="ipl-footer">
+        <p><b>IPL Official Website</b></p>
+        <p>All rights reserved 2022</p>
+      </div>
+      <div id="ipl-sponsor">
+        <p id="sponsor">Sponsors</p>
+        <img
+          class="sponsor-img"
+          src="https://i.pinimg.com/originals/5b/ac/94/5bac942d02e70ce67498bf2ff04efe97.png"
+          alt=""
+        />
+        <img
+          class="sponsor-img"
+          src="https://images.news18.com/ibnlive/uploads/2020/08/1597413702_dream-11.png"
+          alt=""
+        />
+        <img
+          class="sponsor-img"
+          src="https://lever-client-logos.s3.us-west-2.amazonaws.com/9f8ae7a1-e18b-49a4-98cc-32d767d4663c-1621589042415.png"
+          alt=""
+        />
+        <img
+          class="sponsor-img"
+          src="https://qph.cf2.quoracdn.net/main-qimg-4735459140d0660c6fd3ccdd56f8883d-lq"
+          alt=""
+        />
+      </div>
+    </footer>
+
+    <script src="project.js"></script>
+  </body>
+</html>
